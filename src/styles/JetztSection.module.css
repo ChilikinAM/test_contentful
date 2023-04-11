@@ -21,7 +21,7 @@
     width: 362px;
 }
 .JetztSection_rightContener > h3 {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -29,13 +29,13 @@
     color: #013A51;
 }
 .JetztSection_rightContener > p {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
-    /*leading-trim: both;*/
-    /*text-edge: cap;*/
+    leading-trim: both;
+    text-edge: cap;
     color: #013A51;
 }
 .JetztSection_right_input {
@@ -48,7 +48,7 @@
     padding-left: 17px;
 }
 .JetztSection_right_input::placeholder {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -76,7 +76,7 @@
     border-radius: 7px;
     cursor: pointer;
     /* TEXT */
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

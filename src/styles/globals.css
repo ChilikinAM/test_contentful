@@ -1,9 +1,19 @@
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('../asset/GT Haptik/GT Haptik Regular.ttf');
+  /*src: url('../asset/GT Haptik/GT Haptik Bold.ttf');*/
+  /*src: url('../asset/GT Haptik/GT Haptik Bold Regular.ttf');*/
+  /*src: url('../asset/GT Haptik/GT Haptik Black Regular.ttf');*/
+  /*font-weight: 400;*/
+  /*font-style: normal;*/
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  /*--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',*/
+  /*  'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',*/
+  /*  'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;*/
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -100,10 +110,72 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* Общие стили */
+h1 {
+  font-family: 'GT Haptik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+}
+h2 {
+  font-family: 'GT Haptik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+}
+h3 {
+  font-family: 'GT Haptik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  color: #000000;
+}
+.paragraph {
+  font-family: 'GT Haptik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.paragraph_small {
+  font-family: 'GT Haptik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  leading-trim: both;
+  text-edge: cap;
+  color: #000000;
+}
+.sub_headline {
+  font-family: 'GT Haptik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+
+  color: #000000;
+
+}
+@media screen and (max-width:960px){
+  .paragraph {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 43px;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
-
-

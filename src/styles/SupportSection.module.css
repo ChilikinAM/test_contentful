@@ -15,7 +15,7 @@
     width: 70%;
 }
 .SupportSection_block > p {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -30,7 +30,7 @@
     width: 100%;
     cursor: pointer;
     /* TEXT */
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
@@ -54,7 +54,7 @@
 }
 .SupportSection_content_left {
     /* TEXT */
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;

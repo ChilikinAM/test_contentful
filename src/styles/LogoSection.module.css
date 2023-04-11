@@ -16,7 +16,7 @@
     gap: 50px;
 }
 .LogoSection_block > h3 {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -44,7 +44,7 @@
     border: 1.5px solid #16394F;
     border-radius: 7px;
     /*TEXT*/
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

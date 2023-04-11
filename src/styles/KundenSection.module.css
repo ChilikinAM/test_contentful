@@ -15,7 +15,7 @@
     width: 70%;
 }
 .KundenSection_Title {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -25,13 +25,13 @@
     padding-bottom: 13px;
 }
 .KundenSection_Description {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
-    /*leading-trim: both;*/
-    /*text-edge: cap;*/
+    leading-trim: both;
+    text-edge: cap;
     text-align: center;
     color: #013A51;
     padding-bottom: 49px;

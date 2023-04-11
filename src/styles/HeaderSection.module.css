@@ -15,7 +15,7 @@
     width: 70%;
 }
 .HeaderSection_preTitle {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
@@ -27,7 +27,7 @@
     padding-bottom: 13px;
 }
 .HeaderSection_Title {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -37,7 +37,7 @@
     padding-bottom: 27px;
 }
 .HeaderSection_Description {
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -58,7 +58,7 @@
     background: #69AEFF;
     border-radius: 7px;
     /* TEXT */
-    /*font-family: 'GT Haptik';*/
+    font-family: 'GT Haptik';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
