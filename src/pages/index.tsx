@@ -10,11 +10,12 @@ import Kunden_section from "@/components/Kunden_section";
 import Support_section from "@/components/support_section";
 import {
     IHeaderSektion,
-    IHeaderSektionFields, IKundenVideoSektion,
+    IHeaderSektionFields, IJetztLoslegenSection, IJetztLoslegenSectionFields, IKundenVideoSektion,
     IKundenVideoSektionFields, ILogoSection,
     ILogoSectionFields, ISupportSection,
     ISupportSectionFields
 } from "../../@types/generated/contentful";
+import Jetzt_section from "@/components/Jetzt_section";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,18 +44,30 @@ export const getServerSideProps: GetServerSideProps = async () => {
     })
     const [support_section] = support.items
 
+    const jetzt = await client.getEntries<IJetztLoslegenSectionFields>({
+        content_type: 'jetztLoslegenSection',
+        limit: 1
+    })
+    const [jetzt_section] = jetzt.items
+
     return {
         props: {
             header: header_section,
             logo: logo_section,
             kunden: video_section,
-            support: support_section
+            support: support_section,
+            jetzt: jetzt_section
         }
     }
 }
 
-const Home = ({header, logo, kunden, support}:
-                  {header: IHeaderSektion, logo: ILogoSection, kunden: IKundenVideoSektion, support: ISupportSection}) => {
+const Home = ({header, logo, kunden, support, jetzt}:
+                  {header: IHeaderSektion,
+                      logo: ILogoSection,
+                      kunden: IKundenVideoSektion,
+                      support: ISupportSection,
+                      jetzt: IJetztLoslegenSection
+                  }) => {
   return (
     <>
       <Head>
@@ -68,6 +81,7 @@ const Home = ({header, logo, kunden, support}:
           <Logo_section logo={logo} />
           <Kunden_section kunden={kunden} />
           <Support_section support={support} />
+          <Jetzt_section jetzt={jetzt} />
       </main>
     </>
   )

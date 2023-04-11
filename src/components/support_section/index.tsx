@@ -23,20 +23,20 @@ const Support_section = ({support}: { support: ISupportSection}) => {
                 <div className={styles.SupportSection_content}>
                     <div className={styles.SupportSection_content_left}>
                         {selectSupport ?
-                            documentToReactComponents(support.fields.leftBtnText) :
-                            documentToReactComponents(support.fields.rightBtnText)
+                            documentToReactComponents(support.fields.leftBtnText!) :
+                            documentToReactComponents(support.fields.rightBtnText!)
                         }
                     </div>
                     <div className={styles.SupportSection_content_right}>
                         {selectSupport ?
                             <img
                                 className={styles.SupportSection_content_img}
-                                src={support.fields.leftBtnImage.fields.file.url}
+                                src={support.fields.leftBtnImage?.fields.file.url}
                                 alt="img"
                             /> :
                             <img
                                 className={styles.SupportSection_content_img}
-                                src={support.fields.rightBtnImage.fields.file.url}
+                                src={support.fields.rightBtnImage?.fields.file.url}
                                 alt="img"
                             />
                         }

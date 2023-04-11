@@ -39,6 +39,41 @@ export interface IHeaderSektion extends Entry<IHeaderSektionFields> {
   };
 }
 
+export interface IJetztLoslegenSectionFields {
+  /** title */
+  title?: string | undefined;
+
+  /** btnName */
+  btnName?: string | undefined;
+
+  /** checkboxText */
+  checkboxText?: string | undefined;
+
+  /** description */
+  description?: string | undefined;
+
+  /** backgroundImg */
+  backgroundImg?: Asset | undefined;
+}
+
+export interface IJetztLoslegenSection
+  extends Entry<IJetztLoslegenSectionFields> {
+  sys: {
+    id: string;
+    type: string;
+    createdAt: string;
+    updatedAt: string;
+    locale: string;
+    contentType: {
+      sys: {
+        id: "jetztLoslegenSection";
+        linkType: "ContentType";
+        type: "Link";
+      };
+    };
+  };
+}
+
 export interface IKundenVideoSektionFields {
   /** title */
   title?: string | undefined;
@@ -144,12 +179,14 @@ export interface ISupportSection extends Entry<ISupportSectionFields> {
 
 export type CONTENT_TYPE =
   | "headerSektion"
+  | "jetztLoslegenSection"
   | "kundenVideoSektion"
   | "logoSection"
   | "supportSection";
 
 export type IEntry =
   | IHeaderSektion
+  | IJetztLoslegenSection
   | IKundenVideoSektion
   | ILogoSection
   | ISupportSection;

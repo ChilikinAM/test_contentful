@@ -1,0 +1,91 @@
+.JetztSection_component {
+    width: 100%;
+}
+.JetztSection_context {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.JetztSection_left {
+    width: 50%;;
+}
+.JetztSection_right {
+    width: 50%;
+    min-height: 100%;
+    padding: 50px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+}
+.JetztSection_rightContener {
+    width: 362px;
+}
+.JetztSection_rightContener > h3 {
+    /*font-family: 'GT Haptik';*/
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #013A51;
+}
+.JetztSection_rightContener > p {
+    /*font-family: 'GT Haptik';*/
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    /*leading-trim: both;*/
+    /*text-edge: cap;*/
+    color: #013A51;
+}
+.JetztSection_right_input {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #D6E3EC;
+    border-radius: 5px;
+    width: 362px;
+    height: 69px;
+    padding-left: 17px;
+}
+.JetztSection_right_input::placeholder {
+    /*font-family: 'GT Haptik';*/
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    color: #7BA8B4;
+    /*padding-left: 17px;*/
+}
+.JetztSection_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+.JetztSection_formBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    width: 153px;
+    height: 48px;
+    background: #69AEFF;
+    border-radius: 7px;
+    cursor: pointer;
+    /* TEXT */
+    /*font-family: 'GT Haptik';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.140625px;
+    color: #FFFFFF;
+}
+.JetztSection_checkboxConteiner {
+    display: flex;
+    gap: 10px;
+}
