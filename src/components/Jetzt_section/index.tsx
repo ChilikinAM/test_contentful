@@ -7,7 +7,6 @@ const Jetzt_section = ({jetzt} : {jetzt: IJetztLoslegenSection}) => {
     const [vorname, setVorname] = useState('')
     const [nachname, setNachname] = useState('')
     const [email, setEmail] = useState('')
-    const [chkbox, setChkbox] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -18,7 +17,6 @@ const Jetzt_section = ({jetzt} : {jetzt: IJetztLoslegenSection}) => {
         };
         console.log(data);
     }
-    // console.log(chkbox)
     return (
         <div
             className={styles.JetztSection_component}
@@ -61,7 +59,7 @@ const Jetzt_section = ({jetzt} : {jetzt: IJetztLoslegenSection}) => {
                             />
                             <button className={styles.JetztSection_formBtn}>{jetzt.fields.btnName}</button>
                             <div className={styles.JetztSection_checkboxConteiner}>
-                                <input type="checkbox" onChange={() => setChkbox(!chkbox)} required  />
+                                <input type="checkbox" required  />
                                 <p>{jetzt.fields.checkboxText}</p>
                             </div>
                         </form>
